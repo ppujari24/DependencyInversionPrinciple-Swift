@@ -43,7 +43,7 @@ Standard object graph where you see the higher-level object is dependent on and 
 
 ##### Tradional dependency
    
-<center><img src="/Users/ppujari/Desktop/DIP1.png" alt="drawing" width="300"/></center> 
+<center><img src="DIP1.png" alt="drawing" width="300"/></center> 
 
 This is standard dependency, where you can't use `Foo` without `Bar`.
 
@@ -74,7 +74,7 @@ This `ProtocolBar` can be created from the public API of the `Bar` class.
   }
 ```
 
-<center><img src="/Users/ppujari/Desktop/DIP2.png" alt="drawing" width="300"/></center> 
+<center><img src="DIP2.png" alt="drawing" width="300"/></center> 
 
 
 You've successfully decoupled the implementation of `Bar` from the use of it in `Foo` by the protocol usage.
@@ -110,7 +110,7 @@ If you want to invert the dependency structure here, then you must first change 
 
   - Nothing may have changed structurally, but the perspective of ownership has shifted.
 
-<center><img src="/Users/ppujari/Desktop/DIP3.png" alt="drawing" width="300"/></center> 
+<center><img src="DIP3.png" alt="drawing" width="300"/></center> 
 
 If `Foo` owns the `DoSomethingProtocol` abstraction, you can place these two constructs in a package that is independent of `Bar`. You can put them into their own namespace, their own assembly, etc. 
 This can greatly increase the illustration of what class or module is dependent on the other. 
